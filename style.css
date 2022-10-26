@@ -1,0 +1,123 @@
+
+:root{
+    --primary-color: #333;
+    --secondary-color: red;
+    --section-bg-color: #eeeeee;
+
+    /*Text style*/
+
+    --primary-font: 'Inter', sans-serif;
+    --main-text: 'Amatic SC', cursive;
+    --color-dark-text: #222;
+    --color-light-text: whitesmoke;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Inter', sans-serif;
+    color: var(--color-dark-text);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ----- Navbar Style ------*/
+
+.logo-brand{
+    font-size: 28px;
+    font-weight: 900;
+}
+.logo-point{
+    color: var(--secondary-color);
+}
+
+/*----Home Section----*/
+h1, h2, h3, h4{
+    font-family: var(--main-text);
+}
+
+.home-section{
+    background-color: var(--section-bg-color);
+    /*height: 90vh;*/
+    padding: 4em 4em 4em 6em;
+}
+.home-section h1{
+    font-weight: 700;
+    font-size: 5em;
+}
+
+/*------ About Us section ----- */
+
+.color-secundary-text{
+    color: var(--secondary-color);
+}
+
+h2{
+    font-size: 3em;
+}
+
+li{
+    list-style: none;
+}
+
+.about-image{
+    width: 600px;
+    height: 800px;
+
+    background-image: url(img/food-1050813_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+/* .book-table{
+    transform: translateY(-300px) translateX(90px);
+} */
+
+.about-section .book-table{
+    width: 300px;
+    height: 150px;
+    background-color: var(--section-bg-color);
+    top: 50%;
+    left: 20%;
+}
+
+/* ---- Choose Section ----- */
+
+.choose-section{
+    background-color: var(--section-bg-color);
+    padding: 40px 0;
+}
+
+.choose-icon{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.415);
+    font-size: 30px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+/* ----- Statistic / Parallax section ------ */
+
+.statistic-section{
+    background: linear-gradient(to bottom, #32313192, #32313192), url(img/parallax-section.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+.statistic-section h3{
+    margin-top: 140px;
+    color: var(--color-light-text);
+    font-size: 75px;
+}
+
+.statistic-section p{
+    color: var(--color-light-text);
+    font-size: 24px;
+}
