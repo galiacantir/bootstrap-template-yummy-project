@@ -121,3 +121,47 @@ li{
     color: var(--color-light-text);
     font-size: 24px;
 }
+
+/*---- Menu Section ---*/
+
+#starter-menu{
+    font-size: 40px;
+}
+
+#breakfast-menu{
+    display: none;
+}
+
+#lunch-menu{
+    display: none;
+}
+
+#dinner-menu{
+    display: none;
+}
+
+.container-item .price-item{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.container-item p{
+    margin: 0;
+    padding: 0;
+}
+
+/*-----Testimonials Section ----- */
+.reviews-section{
+    background-color: var(--section-bg-color);
+    height: 100vh;
+}
+
+.reviews-section .text-reviews{
+    width: 50%;
+}
+
+.reviews-section .img-reviews img{
+    border-radius: 100%;
+    border: 5px solid var(--color-light-text);
+}
