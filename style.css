@@ -196,12 +196,14 @@ li{
     height: 70vh;
     background-image: url(img/booking-table.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
 .book-form{
     background-color: var(--section-bg-color);
+    height: 70vh;
+
 }
 
 .book-form input{
@@ -220,3 +222,6 @@ li{
     box-shadow: none;
     border-color: red;
 }
+
+
+/*----footer ---- */
