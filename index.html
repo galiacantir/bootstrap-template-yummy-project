@@ -120,7 +120,7 @@
                     </ul>
 
                     <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-                    <!-- Trebuie sa adaug video sau imagine cu play button -->
+                    <img src="img/img-play.jpg" alt="" width="500px" class="mt-5 img-play">
                 </div>
             </div>
         </div>
@@ -277,20 +277,24 @@
 
     <!-- Reviews Section -->
 
-    <section id="testimonials" class="reviews-section my-5 py-5">
+    <section id="testimonials-section" class="reviews-section my-5 py-5">
         <div class="container">
+            <p class="text-uppercase text-center">Testimonials</p>
+            <h2 class="text-center mb-4">What are they <span class="color-secundary-text">Saying About Us</span></h2>
             <div class="row">
-                <div class="col-9 m-auto">
-                    <p class="text-uppercase text-center">Testimonials</p>
-                    <h2 class="text-center mb-5">What are they <span class="color-secundary-text">Saying About Us</span></h2>
+                <div class="col-sm-12 col-lg-10 offset-lg-1">
                     <div id="review-carousel" class="carousel carousel-dark slide" data-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#review-carousel" data-bs-slide-to="0" class="active btn-carousel bg-danger" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#review-carousel" data-bs-slide-to="1" class="btn-carousel bg-danger" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#review-carousel" data-bs-slide-to="2" class="btn-carousel bg-danger" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#review-carousel" data-bs-slide-to="3" class="btn-carousel bg-danger" aria-label="Slide 4"></button>
+                        </div>
                         <div class="carousel-inner">
-                            <div class="item carousel-item active d-flex justify-content-center align-items-center">
-                                <div class="text-reviews mx-2">
-                                    <p><i class="bi bi-quote color-secundary-text review-quotes"></i>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Aut dolor tempore fugit maiores culpa aliquid repudiandae quaerat temporibus repellendus minus?
-                                        <i class="bi bi-quote color-secundary-text review-quotes"></i></p>
+                            <!-- 1 item -->
+                            <div class="item carousel-item active text-center">
+                                <div class="img-reviews">
+                                    <img src="img/testimonials-1.jpg" alt="">
                                     <h3>Matteo Bassini</h3>
                                     <p>Desiner</p>
                                     <span>
@@ -301,14 +305,18 @@
                                         <i class="bi bi-star-fill"></i>
                                     </span>
                                 </div>
-                                <div class="img-reviews">
-                                    <img src="img/testimonials-1.jpg" alt="" width="200px">
+                                <div class="text-reviews mx-2">
+                                    <p><i class="bi bi-quote color-secundary-text review-quotes"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Aut dolor tempore fugit maiores culpa aliquid repudiandae quaerat temporibus repellendus minus?
+                                        <i class="bi bi-quote color-secundary-text review-quotes"></i>
+                                    </p>
                                 </div>
                             </div>
-
-                            <div class="item carousel-item d-flex justify-content-center align-items-center">
-                                <div class="text-reviews mx-2">
-                                    <p><i class="bi bi-quote color-secundary-text review-quotes"></i>Lorem ipsum dolor sit . Aut dolor tempore fugit maiores culpa aliquid repudiandae quaerat temporibus repellendus minus?<i class="bi bi-quote color-secundary-text review-quotes"></i></p>
+                            <!-- 2 item -->
+                            <div class="item carousel-item text-center">
+                                <div class="img-reviews">
+                                    <img src="img/testimonials-2.jpg" alt="">
                                     <h3>Jessica Simson</h3>
                                     <p>Photograph</p>
                                     <span>
@@ -319,20 +327,18 @@
                                         <i class="bi bi-star-fill"></i>
                                     </span>
                                 </div>
-                                <div class="img-reviews">
-                                    <img src="img/testimonials-2.jpg" alt="" width="200px">
-                                </div>
-                            </div>
-
-                            <div class="item carousel-item d-flex justify-content-center align-items-center">
                                 <div class="text-reviews mx-2">
-                                    <p>
-                                        <i class="bi bi-quote color-secundary-text review-quotes"></i>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Aut dolor tempore  repudiandae quaerat temporibus repellendus minus?
-                                        <i class="bi bi-quote color-secundary-text review-quotes"></i></p>
+                                    <p><i class="bi bi-quote color-secundary-text review-quotes"></i>Lorem ipsum dolor sit . Lorem ipsum dolor sit amet.
+                                        Aut dolor tempore fugit maiores culpa aliquid repudiandae quaerat temporibus repellendus minus?<i class="bi bi-quote color-secundary-text review-quotes"></i></p>
+                                </div>
+
+                            </div>
+                            <!-- 3 item -->
+                            <div class="item carousel-item text-center">
+                                <div class="img-reviews">
+                                    <img src="img/testimonials-3.jpg" alt="">
                                     <h3>Sarah Janson </h3>
-                                    <p>Web developer</p>
+                                    <p>Web developer</p>                                   
                                     <span>
                                         <i class="bi bi-star-fill text-warning"></i>
                                         <i class="bi bi-star-fill text-warning"></i>
@@ -341,11 +347,41 @@
                                         <i class="bi bi-star-fill text-warning"></i>
                                     </span>
                                 </div>
+                                <div class="text-reviews mx-2">
+                                    <p>
+                                        <i class="bi bi-quote color-secundary-text review-quotes"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Aut dolor tempore  repudiandae quaerat temporibus repellendus minus?Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        <i class="bi bi-quote color-secundary-text review-quotes"></i>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <!-- 4 item -->
+                            <div class="item carousel-item text-center">                                
                                 <div class="img-reviews">
-                                    <img src="img/testimonials-3.jpg" alt="" width="200px">
+                                    <img src="img/testimonials-4.jpg" alt="">
+                                    <h3>Enrico Mariconi</h3>
+                                    <p>UI/UX</p>                                    
+                                    <span>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </span>
+                                </div>
+                                <div class="text-reviews mx-2">
+                                    <p>
+                                        <i class="bi bi-quote color-secundary-text review-quotes"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Aut dolor tempore  repudiandae quaerat temporibus repellendus minus? Lorem ipsum dolor sit amet.
+                                        <i class="bi bi-quote color-secundary-text review-quotes"></i>
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                        <!--
                         <button class="carousel-control-prev" type="button" data-bs-target="#review-carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -353,7 +389,7 @@
                         <button class="carousel-control-next" type="button" data-bs-target="#review-carousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
-                        </button>
+                        </button> -->
                     </div>
                 </div>
             </div>

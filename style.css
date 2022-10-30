@@ -154,18 +154,33 @@ li{
 /*-----Testimonials Section ----- */
 .reviews-section{
     background-color: var(--section-bg-color);
-    height: 90vh;
-}
-
-.reviews-section .text-reviews{
-    width: 50%;
+    height: 95vh;
 }
 
 .reviews-section .img-reviews img{
     border-radius: 100%;
+    width: 150px;
     border: 5px solid var(--color-light-text);
 }
 
 .review-quotes{
     font-size: 30px;
+}
+
+.carousel-indicators .btn-carousel{
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 100%;
+    border: none;
+    margin-right: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.carousel-indicators .btn-carousel .active{
+    opacity: 1;
+}
+
+.carousel-indicators{
+    bottom: -50px;
 }
