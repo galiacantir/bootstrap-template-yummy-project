@@ -154,7 +154,7 @@ li{
 /*-----Testimonials Section ----- */
 .reviews-section{
     background-color: var(--section-bg-color);
-    height: 100vh;
+    height: 90vh;
 }
 
 .reviews-section .text-reviews{
@@ -164,4 +164,8 @@ li{
 .reviews-section .img-reviews img{
     border-radius: 100%;
     border: 5px solid var(--color-light-text);
+}
+
+.review-quotes{
+    font-size: 30px;
 }
