@@ -184,3 +184,39 @@ li{
 .carousel-indicators{
     bottom: -50px;
 }
+
+
+/*------ Book Table Section ----- */
+
+.booking-section{
+    height: 70vh;
+}
+
+.img-booking{
+    height: 70vh;
+    background-image: url(img/booking-table.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.book-form{
+    background-color: var(--section-bg-color);
+}
+
+.book-form input{
+    height: 40px;
+    outline: none;
+    border-radius: 0;
+}
+
+.book-form textarea{
+    outline: none;
+    border-radius: 0;
+}
+
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: red;
+}
