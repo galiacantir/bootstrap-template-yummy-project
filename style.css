@@ -35,7 +35,7 @@ a{
 }
 
 /*----Home Section----*/
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
     font-family: var(--main-text);
 }
 
@@ -186,10 +186,17 @@ li{
 }
 
 
+#events-carousel .carousel-indicators{
+    bottom: -30px;
+}
+
+
+
+
 /*------ Book Table Section ----- */
 
 .booking-section{
-    height: 70vh;
+    height: 100vh;
 }
 
 .img-booking{
