@@ -22,6 +22,7 @@ body{
 
 a{
     text-decoration: none;
+    position: relative;
 }
 
 /* ----- Navbar Style ------*/
@@ -32,6 +33,26 @@ a{
 }
 .logo-point{
     color: var(--secondary-color);
+}
+
+/*.navbar a:hover:before, .navbar li:hover>a:before, .navbar .active:before {
+    visibility: visible;
+    width: 100%;
+}*/
+
+.link-style a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: red;
+    left:0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.link-style a:hover::after{
+    width: 100%;
 }
 
 /*----Home Section----*/
@@ -63,14 +84,15 @@ li{
     list-style: none;
 }
 
-.about-image{
-    width: 600px;
-    height: 800px;
+.about-container{
+    height: 100vh;
+}
 
+.about-image{
     background-image: url(img/food-1050813_960_720.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    
+    background-size: cover;
+    height: 90vh;
 }
 
 /* .book-table{
@@ -190,9 +212,9 @@ li{
     bottom: -30px;
 }
 
-
-
-
+#events-carousel .card-body{
+    background-color: var(--section-bg-color);
+}
 /*------ Book Table Section ----- */
 
 .booking-section{
