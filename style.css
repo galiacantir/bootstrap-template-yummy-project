@@ -173,6 +173,16 @@ li{
     padding: 0;
 }
 
+.page-link{
+    text-decoration: none;
+    color: var(--color-dark-text);
+}
+
+.page-link:hover, .page-link:focus{
+    color: var(--secondary-color);
+}
+
+
 /*-----Testimonials Section ----- */
 .reviews-section{
     background-color: var(--section-bg-color);
@@ -270,9 +280,16 @@ li{
     font-size: 20px;
 }
 
+
+
 .up-btn:hover{
     background-color: var(--primary-color);
     color:white;
+}
+
+
+.modal{
+    margin-top: 180px;
 }
 
 
