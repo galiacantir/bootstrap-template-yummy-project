@@ -12,12 +12,20 @@
     --color-light-text: whitesmoke;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:'Inter', sans-serif;
     color: var(--color-dark-text);
+}
+
+h1, h2, h3, h4, h5{
+    font-family: var(--main-text);
 }
 
 a{
@@ -31,14 +39,17 @@ a{
     font-size: 28px;
     font-weight: 900;
 }
+
 .logo-point{
     color: var(--secondary-color);
 }
-
-/*.navbar a:hover:before, .navbar li:hover>a:before, .navbar .active:before {
-    visibility: visible;
-    width: 100%;
-}*/
+.link-style a{
+    font-size: 17px;
+    font-weight: 800;
+}
+.link-style a:hover{
+    color: black;
+}
 
 .link-style a::after{
     content: "";
@@ -55,19 +66,34 @@ a{
     width: 100%;
 }
 
-/*----Home Section----*/
-h1, h2, h3, h4, h5{
-    font-family: var(--main-text);
+.navbar-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
 }
+
+.navbar-wrap.scroll-on{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background: var(--color-light-text);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
+    transition: all .15s ease-in-out 0s;
+}
+
+/*----Home Section----*/
 
 .home-section{
     background-color: var(--section-bg-color);
-    /*height: 90vh;*/
+    height: 100vh;
     padding: 4em 4em 4em 6em;
 }
 .home-section h1{
     font-weight: 700;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 /*------ About Us section ----- */
