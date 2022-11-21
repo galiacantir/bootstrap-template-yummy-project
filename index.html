@@ -21,14 +21,16 @@
 
     <!-- Navbar Section -->
     <header>
-    <nav class="navbar navbar-expand-lg px-5 bg-light navbar-wrap">
-        <div class="container-fluid py-2 px-5">
+    <nav class="navbar navbar-expand-lg bg-light navbar-wrap">
+        <div class="container py-2">
           <a class="navbar-brand logo-brand" href="#">Yummy <span class="logo-point">.</span></a>
+          <!-- toogler-button -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0 link-style ">
+
+          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 link-style">
               <li class="nav-item px-3">
                 <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
@@ -76,8 +78,8 @@
 
     <section id="home" class="home-section ">
         <div class="container-fluid">
-            <div class="row  justify-content-between align-items-center">
-                <div class="col-lg-5 order-2 order-lg-1 flex-column text-center text-lg-start ">
+            <div class="row  justify-content-between align-items-center py-5 px-5 mx-4">
+                <div class="col-lg-5 col-md-6">
                     <h1>Enjoy Your Healthy<br>Delicious Food</h1>
                     <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat eaque fuga? Magnam, ipsam repudiandae.</p>
                     <div>
@@ -86,7 +88,7 @@
                     </div>
                     
                 </div>
-                <div class="col-lg-5 text-center order-1 order-lg-2 pt-5 mt-5 px-5">
+                <div class="col-lg-5 col-md-6 text-center pt-5 mt-5">
                     <div class="">
                         <img src="img/menu-item-1.png" alt="" width="" class="img-fluid aos-init aos-animate" data-aos="zoom-out" data-aos-delay="300" >
                     </div>
@@ -97,16 +99,37 @@
 
     <!-- About Us Section -->
 
-    <section id="about" class="about-section">
+    <section id="about" class="about-section h-100">
         <div class="container my-5">
             <div class="about-title">
                 <p class="text-uppercase text-center">About Us</p>
                 <h2 class="text-center mb-5">Learn More <span class="color-secundary-text">About Us</span></h2>
             </div>
-            <div class="row about-container">
+
+            
+                <div class="row">
+                    <div class="col-lg-7 col-md-12">
+                        <div class="about-image">
+                            <!-- <img src="img/booking-table.jpg" alt="" > -->
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 mb-lg-0">
+                        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
+                            <ul class="mb-5">
+                                <li><i class="bi bi-check2-all color-secundary-text pe-3"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><i class="bi bi-check2-all color-secundary-text pe-3"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                <li><i class="bi bi-check2-all color-secundary-text pe-3"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                            </ul>
+                            <div class="">
+                                <img src="img/img-play.jpg" class="img-bottom img-fluid" alt="...">
+                                <a href="" class="play-btn"></a>
+                            </div>
+                    </div>
+                </div>
+            
+            <!-- <div class="row about-container">
                 <div class="col-7">
                     <div class="about-image position-relative">
-                        <!-- <img src="img/food-1050813_960_720.jpg" alt="" class=""> -->
                         <h3 class=" book-table position-absolute text-center p-5">Book a table: <br> <span class="color-secundary-text">+197763453647</span></h3>
                     </div>
                 </div>
@@ -126,7 +149,7 @@
                         </div>
                         
                     </div>
-                    <!-- <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
+                    <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
                     <ul>
                         <li><i class="bi bi-check2-all color-secundary-text pe-3"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                         <li><i class="bi bi-check2-all color-secundary-text pe-3"></i>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
@@ -134,57 +157,64 @@
                     </ul>
 
                     <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-                    <img src="img/img-play.jpg" alt="" width="500px" class="mt-5 img-play"> -->
+                    <img src="img/img-play.jpg" alt="" width="500px" class="mt-5 img-play">
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <!--Why Choose Section -->
 
-    <section id="chooseus" class="choose-section p-5">
+    <section id="choose-us" class="choose-section p-5">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <div class="card p-4 bg-danger text-center">
+                <div class="col-lg-4">
+                    <div class="card p-5 bg-danger text-center">
                         <div class="card-body">
                           <h3 class="card-title text-light">Why Choose Yummy?</h3>
                           <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo id consequuntur ea non quisquam minus facere earum dicta veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, iusto.</p>
-                          <a class="btn rounded-pill border-light px-3" href="">Read more</a>
+                          <a class="btn rounded-pill btn-dark text-light px-3 mt-2" href="">Read more</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card p-4 text-center">
-                        <div class="card-body">
-                            <div class="choose-icon my-3">
-                                <span ><i class="bi bi-award"></i></span>
+
+                <div class="col-lg-8 d-flex align-items-center">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="card shadow text-center p-3 card-choose-section">
+                                <div class="card-body">
+                                <div class="choose-icon my-3">
+                                    <span ><i class="bi bi-award"></i></span>
+                                </div>
+                                <h4 class="card-title">Lorem, ipsum dolor.</h4>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi dolorum perferendis veniam dignissimos, et amet sequi culpa nulla accusantium voluptatum!</p>
+                                </div>
                             </div>
-                            <h4 class="card-title">Lorem, ipsum dolor.</h4>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi dolorum perferendis veniam dignissimos, et amet sequi culpa nulla accusantium voluptatum!</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card p-4 text-center">
-                        <div class="card-body">
-                            <div class="choose-icon my-3">
-                                <span ><i class="bi bi-bell"></i></span>
+
+                        <div class="col-xl-4">
+                            <div class="card shadow text-center p-3 card-choose-section">
+                                <div class="card-body">
+                                    <div class="choose-icon my-3">
+                                        <span ><i class="bi bi-bell"></i></span>
+                                    </div>
+                                    <h4 class="card-title">Lorem amet elit</h4>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi dolorum perferendis veniam dignissimos, et amet sequi culpa nulla accusantium voluptatum!</p>
+                                </div>
                             </div>
-                            <h4 class="card-title">Lorem amet elit</h4>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi dolorum perferendis veniam dignissimos, et amet sequi culpa nulla accusantium voluptatum!</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card p-4 text-center">
-                        <div class="card-body">
-                            <div class="choose-icon my-3">
-                                <span ><i class="bi bi-bag-check"></i></span>
-                            </div>
+
+                        <div class="col-xl-4">
+                            <div class="card shadow text-center p-3 card-choose-section">
+                                <div class="card-body">
+                                    <div class="choose-icon my-3">
+                                        <span ><i class="bi bi-bag-check"></i></span>
+                                    </div>
                             
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi dolorum perferendis veniam dignissimos, et amet sequi culpa nulla accusantium voluptatum!</p>
+                                    <h4 class="card-title">Special title treatment</h4>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi dolorum perferendis veniam dignissimos, et amet sequi culpa nulla accusantium voluptatum!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -197,19 +227,19 @@
     <section id="statistic" class="statistic-section">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                <div class="col-6 col-sm-3 mb-5">
                     <h3>238</h3>
                     <p>Clients</p>
                 </div>
-                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                <div class="col-6 col-sm-3 mb-5">
                     <h3>89</h3>
                     <p>Projects</p>
                 </div>
-                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                <div class="col-6 col-sm-3 mb-5">
                     <h3>1526</h3>
                     <p>Hours of Suport</p>
                 </div>
-                <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                <div class="col-6 col-sm-3 mb-5">
                     <h3>73</h3>
                     <p>Workers</p>
                 </div>
