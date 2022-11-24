@@ -33,6 +33,11 @@ a{
     position: relative;
 }
 
+p{
+    margin:0;
+    padding: 0;
+}
+
 /* ----- Navbar Style ------*/
 
 .logo-brand{
@@ -102,7 +107,7 @@ a{
 }
 .home-section h1{
     font-weight: 700;
-    font-size: 4em;
+    font-size: 4.5em;
 }
 
 /*------ About Us section ----- */
@@ -177,9 +182,9 @@ li{
 }
 
 .statistic-section h3{
-    margin-top: 140px;
+    margin-top: 20vh;
     color: var(--color-light-text);
-    font-size: 75px;
+    font-size: 55px;
 }
 
 .statistic-section p{
@@ -189,31 +194,25 @@ li{
 
 /*---- Menu Section ---*/
 
-#starter-menu{
-    font-size: 40px;
+.menu-section .card:hover{
+    box-shadow: -10px 20px 70px -20px #333;
+    transition: .3s ease-in;
+    cursor: pointer;
 }
 
-#breakfast-menu{
-    display: none;
+.link-menu h4:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: red;
+    left: 10px;;
+    bottom: 0;
+    transition: 0.5s;
 }
 
-#lunch-menu{
-    display: none;
-}
-
-#dinner-menu{
-    display: none;
-}
-
-.container-item .price-item{
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-.container-item p{
-    margin: 0;
-    padding: 0;
+.link-menu h4:hover::after{
+    width: 80%;
 }
 
 .page-link{
@@ -260,7 +259,6 @@ li{
     bottom: -50px;
 }
 
-
 #events-carousel .carousel-indicators{
     bottom: -30px;
 }
@@ -270,12 +268,7 @@ li{
 }
 /*------ Book Table Section ----- */
 
-.booking-section{
-    height: 100vh;
-}
-
 .img-booking{
-    height: 70vh;
     background-image: url(img/booking-table.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -284,7 +277,7 @@ li{
 
 .book-form{
     background-color: var(--section-bg-color);
-    height: 70vh;
+    /* height: 70vh; */
 
 }
 
@@ -306,7 +299,7 @@ li{
 }
 
 
-
+/* -----Up Button -----*/
 .up-btn{
     position: fixed;
     width: 40px;
@@ -330,7 +323,7 @@ li{
     color:white;
 }
 
-
+/*-----Modal Add Product ------*/
 .modal{
     margin-top: 180px;
 }
@@ -356,9 +349,26 @@ li{
 .link-style a:hover::after{
         display: none;
     }
+.home-section{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.home-section h1{
+    font-size: 3em;
+    
+}
+
+
+.footer-element{
+    margin-bottom: 20px;
+}
+
 }
 
 @media (max-width: 330px){
-
+    .home-section h1{
+        font-size: 3em;
+    }
 }
 
