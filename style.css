@@ -22,6 +22,7 @@ body{
     box-sizing: border-box;
     font-family:'Inter', sans-serif;
     color: var(--color-dark-text);
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5{
@@ -181,13 +182,16 @@ li{
     height: 60vh;
 }
 
-.statistic-section h3{
+.statistic-section .stats-item{
     margin-top: 20vh;
     color: var(--color-light-text);
+}
+
+.statistic-section .stats-item h3{
     font-size: 55px;
 }
 
-.statistic-section p{
+.statistic-section .stats-item p{
     color: var(--color-light-text);
     font-size: 24px;
 }
@@ -314,9 +318,13 @@ li{
     line-height:40px;
     color: white;
     font-size: 20px;
+    opacity: 0;
+    transition: all .4s;
 }
 
-
+.up-btn.active{
+    opacity: 1;
+}
 
 .up-btn:hover{
     background-color: var(--primary-color);
@@ -343,6 +351,20 @@ li{
         padding: 6rem 0rem;
     }
 
+    .statistic-section .stats-item{
+        margin-top: 10vh;
+        color: var(--color-light-text);
+    }
+    
+    .statistic-section .stats-item h3{
+        font-size: 45px;
+    }
+    
+    .statistic-section .stats-item p{
+        color: var(--color-light-text);
+        font-size: 20px;
+    }
+
 }
 
 @media (max-width: 767px){
@@ -355,9 +377,26 @@ li{
 }
 
 .home-section h1{
-    font-size: 3em;
-    
+    font-size: 3em; 
 }
+
+.statistic-section{
+    height: 80vh;
+}
+.statistic-section .stats-item{
+    margin-top: 5vh;
+    color: var(--color-light-text);
+}
+
+.statistic-section .stats-item h3{
+    font-size: 40px;
+}
+
+.statistic-section .stats-item p{
+    color: var(--color-light-text);
+    font-size: 18px;
+}
+
 
 
 .footer-element{
@@ -370,5 +409,6 @@ li{
     .home-section h1{
         font-size: 3em;
     }
+
 }
 
