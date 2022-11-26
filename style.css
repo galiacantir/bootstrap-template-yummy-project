@@ -270,6 +270,61 @@ li{
 #events-carousel .card-body{
     background-color: var(--section-bg-color);
 }
+
+
+/*------ Our Chefs -----*/
+
+.our-chefs{
+    background-color: var(--section-bg-color);
+}
+
+.our-chefs .chefs-wrap{
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.our-chefs .chefs-wrap:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.5s ease;
+}
+
+.our-chefs .chefs-img{
+    position: relative;
+    
+}
+
+.our-chefs .chefs-social{
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    margin: 0 auto;
+    background-color: rgba(240, 248, 255, 0.305);
+    border-radius: 10px;
+    top:20px;
+    right: 10px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center; 
+}
+
+.chefs-social a{
+    text-decoration: none;
+    color: var(--color-dark-text)
+}
+
+.chefs-social i{
+    font-size: 20px;
+}
+
+.our-chefs .chefs-wrap:hover .chefs-social{
+    opacity: 1;
+    
+}
+
+
+
 /*------ Book Table Section ----- */
 
 .img-booking{
