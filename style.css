@@ -48,6 +48,7 @@ p{
 
 .logo-point{
     color: var(--secondary-color);
+    font-size: 30px;
 }
 .link-style a{
     font-size: 17px;
@@ -204,19 +205,19 @@ li{
     cursor: pointer;
 }
 
-.link-menu h4:after{
+.link-menu:after{
     content: "";
     position: absolute;
     height: 2px;
     width: 0;
     background-color: red;
-    left: 10px;;
+    left:0;
     bottom: 0;
     transition: 0.5s;
 }
 
-.link-menu h4:hover::after{
-    width: 80%;
+.link-menu:hover::after{
+    width: 100%;
 }
 
 .page-link{
@@ -232,7 +233,7 @@ li{
 /*-----Testimonials Section ----- */
 .reviews-section{
     background-color: var(--section-bg-color);
-    height: 95vh;
+    /*height: 95vh;*/
 }
 
 .reviews-section .img-reviews img{
@@ -259,18 +260,20 @@ li{
     opacity: 1;
 }
 
+
 .carousel-indicators{
-    bottom: -50px;
+    bottom: -90px;
 }
 
-#events-carousel .carousel-indicators{
-    bottom: -30px;
-}
 
+/*------Events Carousel -----*/
 #events-carousel .card-body{
     background-color: var(--section-bg-color);
 }
 
+#events-carousel .carousel-indicators{
+    bottom: -40px;
+}
 
 /*------ Our Chefs -----*/
 
